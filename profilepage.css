@@ -1,0 +1,248 @@
+
+/* =====
+    STYLING GOES HERE
+===== */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 400;
+}
+
+.container {
+    position: relative;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    height: 35vh;
+    background-image: url(img/image.webp);
+    background-size: 100% 45rem;
+}
+/* ==== End of header page === */
+img {
+    width: 100%; 
+    border-radius: 50%; 
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .8);
+    padding: .5rem;
+}
+.img-rounded { 
+    width: 17%;
+    margin-left: 10rem;
+    margin-top: -12vh;
+}
+.content {
+    width: 30%;
+    position: absolute;
+    left: 27%;
+    top: 18%;
+}
+h1 {
+   margin-bottom: .5rem; 
+}
+em {
+    display: block;
+    color: dodgerblue;
+}
+.icon {
+    color: dodgerblue;
+    width: 2.5rem;
+}
+.track {
+    display: block;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+    /* ==== content of the page === */
+.wrapper-body {
+    background-color: #eee;
+    margin-top: 15vh;
+    min-height: 40vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                    'Trebuchet MS', sans-serif;
+}
+.wrapper,
+.contact {
+    width: 104rem;
+    padding-top: .2rem;
+    margin: 0 auto;
+}
+/* ==== first part of the contentpage === */
+.biodata {
+    height: min-content;
+    width: 20%;
+    margin-right: 5%;
+}
+h2 {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;   
+}
+.heading {
+    display: block;
+    margin-bottom: 1rem;
+}
+.fa-star {
+    color: #ffd700;
+    width: 2.5rem;
+}
+small {
+    font-size: 1.4rem;
+}
+/* ==== second part of the contentpage === */
+.biodata2 {
+    height: min-content;
+    width: 45%;
+    padding: 1rem 1rem 2rem;
+    margin-right: 5%;
+    border-radius: .5rem;
+    background-color: #fff;
+    opacity: .8;
+}
+.biodata2 h2 {
+    padding-top: 1rem;
+}
+.about-me {
+    font-family: initial;
+    line-height: 1.5;
+    text-align: justify;
+}
+.hobbies {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ==== Third part of the contentpage === */
+.biodata3 {
+    height: min-content;
+    width: 25%;
+}
+.biodata3 .heading {
+    padding-left: .7rem;
+}
+.biodata3 small {
+    display: inline-block;
+    width: 35%;
+    margin-bottom: .5rem;
+}
+/* ==== contact page === */
+.contact {
+    background-color: #eee;
+    margin-top: 12vh;
+}
+.urgent-reply {
+    background-color: dodgerblue;
+    width: 50%;
+    margin-right: 5%;
+}
+.service-info {
+    background-color: #fff;
+    width: 40%;
+    margin-top: -2rem;
+    padding: .5rem;
+    color: #ffd700;
+}
+.sub-head{
+    width: 55%;
+    margin: 2rem auto;
+}
+
+/* ==== message box page === */
+form {
+    width: 40%;
+    margin-right: 5%;
+}
+form h2 {
+    font-weight: 700;
+    padding-top: 1.5rem;
+}
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.formicon {
+    padding: 1rem;
+    background: dodgerblue;
+    color: white;
+    min-width: 5rem;
+    text-align: center;
+}
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 1.4rem 2rem;
+    outline: none;
+    border: 0;
+}
+input::placeholder,
+textarea::placeholder {
+    opacity: .7;
+}
+textarea {
+    width: 100%;
+    height: 15rem;
+    padding: 1.4rem;
+    border: 0;
+    background-color: #fff;
+    resize: none;
+    margin-top: .3rem;
+    outline: none;
+}
+.btn {
+    margin-top: 1rem;
+    background-color: dodgerblue;
+    color: white;
+    padding: 1.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* ===== footer page ===== */
+.footer {
+    margin-top: 8rem;
+    background-color: #eee;
+    height: 8rem;
+    color: #333;
+}
+.footer-content {
+    padding: 1.5rem;
+    width: 25%;
+    margin: 2rem auto;
+}
+
+
+
+
+
+
+
+
+
