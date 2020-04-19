@@ -23,24 +23,26 @@ body{
     font-weight: 400;
 }
 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+}
+
 .container {
     position: relative;
 }
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
+
 .header {
     height: 35vh;
     background-image: url(img/image.webp);
     background-size: 100% 45rem;
 }
 /* ==== End of header page === */
-img {
+.img-rounded img {
     width: 100%; 
     border-radius: 50%; 
     box-shadow: 0 0 1rem rgba(0, 0, 0, .8);
@@ -55,7 +57,7 @@ img {
     width: 30%;
     position: absolute;
     left: 27%;
-    top: 18%;
+    top: 22%;
 }
 h1 {
    margin-bottom: .5rem; 
@@ -76,33 +78,33 @@ em {
 }
     /* ==== content of the page === */
 .wrapper-body {
-    background-color: #eee;
+    background-color: #f4fcff;
     margin-top: 15vh;
-    min-height: 40vh;
+    padding-bottom: 5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                     'Trebuchet MS', sans-serif;
 }
 .wrapper,
 .contact {
     width: 104rem;
-    padding-top: .2rem;
     margin: 0 auto;
 }
 /* ==== first part of the contentpage === */
-.biodata {
-    height: min-content;
+.biodata1 {
     width: 20%;
-    margin-right: 5%;
+    height: min-content;
+    margin-top: 2rem;
+    margin-right: 3%;
+    padding: 1rem;
+}
+.user-biodata .fa {
+    margin-bottom: 1.5rem;
 }
 h2 {
     padding-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;   
-}
-.heading {
-    display: block;
-    margin-bottom: 1rem;
 }
 .fa-star {
     color: #ffd700;
@@ -113,13 +115,13 @@ small {
 }
 /* ==== second part of the contentpage === */
 .biodata2 {
-    height: min-content;
-    width: 45%;
-    padding: 1rem 1rem 2rem;
-    margin-right: 5%;
-    border-radius: .5rem;
+    width: 60%;
+}
+.aboutinfo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background-color: #fff;
-    opacity: .8;
+    padding: 1rem 2rem;
 }
 .biodata2 h2 {
     padding-top: 1rem;
@@ -135,113 +137,160 @@ small {
 }
 
 /* ==== Third part of the contentpage === */
-.biodata3 {
-    height: min-content;
-    width: 25%;
+.expertise {
+    padding: 2rem;
 }
-.biodata3 .heading {
+.expertise .heading {
     padding-left: .7rem;
 }
-.biodata3 small {
+.expertise small {
     display: inline-block;
-    width: 35%;
+    width: 20%;
     margin-bottom: .5rem;
 }
 /* ==== contact page === */
-.contact {
-    background-color: #eee;
-    margin-top: 12vh;
+.wrapper-contact {
+    margin-top: 10vh; 
 }
-.urgent-reply {
-    background-color: dodgerblue;
-    width: 50%;
-    margin-right: 5%;
-}
-.service-info {
-    background-color: #fff;
-    width: 40%;
-    margin-top: -2rem;
-    padding: .5rem;
-    color: #ffd700;
-}
-.sub-head{
-    width: 55%;
-    margin: 2rem auto;
-}
-
 /* ==== message box page === */
-form {
+
+.side {
+    margin-left: 5%;
     width: 40%;
-    margin-right: 5%;
+    height: 55vh;
 }
-form h2 {
+.side img {
+    width: 100%;
+    height: 55vh;
+}
+.contact-form {
+    width: 40%;
+    margin-right: 10%;
+    padding: 3rem 1rem 0;
+}
+.contact-form h2 {
     font-weight: 700;
-    padding-top: 1.5rem;
+    padding: 0;
 }
 .input-container {
-    display: flex;
     width: 100%;
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
 .formicon {
-    padding: 1rem;
-    background: dodgerblue;
-    color: white;
-    min-width: 5rem;
-    text-align: center;
+    color: dodgerblue;
+    display: block;
 }
-input[type=text],
-input[type=email] {
-    width: 100%;
-    padding: 1.4rem 2rem;
-    outline: none;
-    border: 0;
-}
-input::placeholder,
-textarea::placeholder {
+input::placeholder{
     opacity: .7;
 }
-textarea {
+input[type=text],
+input[type=text] {
     width: 100%;
-    height: 15rem;
-    padding: 1.4rem;
-    border: 0;
-    background-color: #fff;
-    resize: none;
-    margin-top: .3rem;
+    padding: 1rem 0;
+    margin-bottom: .5rem;
     outline: none;
+    border: 0;
+    border-bottom: 1px solid dodgerblue;
+    resize: vertical;   
 }
+
 .btn {
     margin-top: 1rem;
-    background-color: dodgerblue;
-    color: white;
-    padding: 1.5rem 2rem;
-    border: none;
+    color: dodgerblue;
+    padding: 1.5rem;
+    border: 1px solid dodgerblue;
+    background: transparent;
     cursor: pointer;
     width: 100%;
-    opacity: 0.9;
     text-transform: uppercase;
     font-weight: 700;
+}
+.btn:hover {
+    opacity: .8;
+    color: white;
+    background: dodgerblue;
 }
 
 /* ===== footer page ===== */
 .footer {
-    margin-top: 8rem;
-    background-color: #eee;
-    height: 8rem;
-    color: #333;
+    margin-top: 12vh;
+    background-color: dodgerblue;
+    height: 20rem;
+    color: #efefef;
 }
 .footer-content {
-    padding: 1.5rem;
-    width: 25%;
-    margin: 2rem auto;
+    padding-top: 5rem;
+    text-align: center;
 }
+.footer-content p {
+    padding-left: 1.5rem;
+}
+.fa-phone {
+    padding-right: 1rem;
+    color: #efefef;
+}
+.social {
+    padding: 2rem;
+    font-size: 3rem;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #efefef;
+  }
 
 
 
+/*
+==== media queries ===== 
+  @media screen and (max-width: 600px) {
 
+    .column, .content {
+      width: 100%;
+      display: block;
+    }
+    
+    .side {
+        max-width: 56rem; 
+        margin: 0;
+    }
+    .wrapper {
+        max-width: 56rem; 
+        margin-left: 2.5rem;
+    }
+    .content {
+        margin-top: -5rem;
+        margin-left: 13rem;
+    }
+    input[type=text], input[type=submit] {
+        width: 45%;
+        display: block;
+    }
 
+    .img-rounded {
+        width: 30%;
+    }
+    .wrapper-body {
+        margin-top: 3vh;
+    }
+    h2, h1 {
+        font-size: 1.8rem;
+    }
+    .track {
+        font-size: 1rem;
+    }
+    .footer {
+        width: 100%;
+        margin: 8rem auto 0;
+        height: 13rem;
+    }
+    .footer-content {
+        padding-top: 2rem;
+    }
+
+  }
+
+ */
 
 
 
