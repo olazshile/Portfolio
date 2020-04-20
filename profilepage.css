@@ -41,7 +41,7 @@ a {
     height: 100vh;
 }
 .header .row {
-    width: 114rem;
+    width: 106rem;
     margin: 0 auto;
 }
 
@@ -67,16 +67,18 @@ a {
   }
 
 /* ==== content of the page === */
-.myicon img {
-    width: 100%; 
+img {
+    max-width: 100%;
+    height: auto;
 }
 .myicon {
-    padding-left: 5rem;
+    padding-left: 8rem;
+    margin-top: 3rem;
     width: 100%;
 }
 .content {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 2.2rem 0;
+    padding: 1rem;
 }
 .content h1 {
     font-size: 8rem;
@@ -98,7 +100,7 @@ a {
                     'Trebuchet MS', sans-serif;
 }
 .row {
-    width: 114rem;
+    width: 106rem;
     margin: 0 auto;
 }
 
@@ -190,7 +192,7 @@ small {
     background-color: #f4fcff;
 }
 .wrapper-contact .row {
-    width: 100rem;
+    width: 106rem;
     margin: 10rem auto;
 }
 /* ==== message box page === */
@@ -283,9 +285,7 @@ input[type=submit] {
     }
     .myicon {
         padding: 0;
-        width: 50%;
-        margin-top: 5rem;
-        margin-left: 10rem;
+        margin: 4rem 4.5rem 0;
     }
     .content {
       width: 80%;   
@@ -299,6 +299,10 @@ input[type=submit] {
         padding-left: 2rem;  
         text-align: center;   
         font-size: 1.3rem; 
+    }
+    strong {
+        padding-left: 17rem;
+        font-size: 1.3rem;
     }
     .biodata span,
     .biodata small {
@@ -343,6 +347,10 @@ input[type=submit] {
     }
     .helpinfo:first-child p {
         font-size: 1.5rem;
+    }
+    .helpinfo:last-child p {
+        font-size: 1.5rem;
+        width: 420px; 
     }
     .connect {
         margin-bottom: 0;
