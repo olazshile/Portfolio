@@ -22,277 +22,343 @@ body{
     color: #333;
     font-weight: 400;
 }
-
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
-.column {
+.col-md {
     float: left;
+    margin-right: 5%;
+    width: calc((100% - 10%) / 2);
 }
-
-.container {
-    position: relative;
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    margin-left: 1rem;
 }
-
 .header {
-    height: 35vh;
-    background-image: url(img/image.webp);
-    background-size: 100% 45rem;
+    height: 100vh;
 }
-/* ==== End of header page === */
-.img-rounded img {
+.header .row {
+    width: 114rem;
+    margin: 0 auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #f4fcff;
+    overflow: auto;
+    height: 15vh;
+    padding-right: 5rem;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #333;
+    padding: 3rem 2rem;
+    font-size: 1.7rem;
+  }
+  .topnav a:hover {
+      padding-bottom: 1.5rem;
+    border-bottom: 1px solid #000;
+  }
+
+/* ==== content of the page === */
+.myicon img {
     width: 100%; 
-    border-radius: 50%; 
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .8);
-    padding: .5rem;
 }
-.img-rounded { 
-    width: 17%;
-    margin-left: 10rem;
-    margin-top: -12vh;
+.myicon {
+    padding-left: 5rem;
+    width: 100%;
 }
 .content {
-    width: 30%;
-    position: absolute;
-    left: 27%;
-    top: 22%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2.2rem 0;
 }
-h1 {
-   margin-bottom: .5rem; 
-}
-em {
-    display: block;
-    color: dodgerblue;
-}
-.icon {
-    color: dodgerblue;
-    width: 2.5rem;
-}
-.track {
-    display: block;
-    font-weight: 700;
-    margin-top: 1rem;
+.content h1 {
+    font-size: 8rem;
+    font-weight: 300;
     text-transform: uppercase;
+    line-height: 1.2; 
 }
-    /* ==== content of the page === */
+.content p{
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+/* ==== End of header page === */
+
 .wrapper-body {
     background-color: #f4fcff;
-    margin-top: 15vh;
+    margin-top: 5vh;
     padding-bottom: 5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                     'Trebuchet MS', sans-serif;
 }
-.wrapper,
-.contact {
-    width: 104rem;
+.row {
+    width: 114rem;
     margin: 0 auto;
 }
+
 /* ==== first part of the contentpage === */
-.biodata1 {
-    width: 20%;
-    height: min-content;
-    margin-top: 2rem;
-    margin-right: 3%;
-    padding: 1rem;
+.biodata {
+    margin: 2rem 0 1rem;
 }
-.user-biodata .fa {
-    margin-bottom: 1.5rem;
+.user-biodata {
+   padding: .85rem;
+   padding-left: 0;
 }
-h2 {
-    padding-top: 2rem;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    font-weight: 500;   
+span {
+    font-weight: 500;
+    width: 40%;
+    display: inline-block;
 }
 .fa-star {
-    color: #ffd700;
+    color: #4CAF50;
     width: 2.5rem;
 }
 small {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 /* ==== second part of the contentpage === */
-.biodata2 {
-    width: 60%;
-}
 .aboutinfo {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: #fff;
-    padding: 1rem 2rem;
+    margin: 2rem;
+    text-align: left;
+    padding-left: .5rem;
 }
-.biodata2 h2 {
-    padding-top: 1rem;
+.wrapper-body h1 {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
 }
-.about-me {
-    font-family: initial;
+.aboutinfo p {
+    padding: 1rem;
+    padding-left: 0;
+    font-size: 1.85rem;
     line-height: 1.5;
-    text-align: justify;
-}
-.hobbies {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
 }
 
 /* ==== Third part of the contentpage === */
+
+.myProgress {
+    width: 100%;
+    background-color: #f4fcff;
+    margin: 1rem 0;
+    color: #fff;
+}
+.myBar {
+    padding: .5rem 2rem;
+    width: 90%;
+    height: 3rem;
+    background-color: #4CAF50;
+}
+.myBar2 {
+    padding: .5rem 2rem;
+    width: 70%;
+    height: 3rem;
+    background-color: #4CAF50;
+}
+.myBar3 {
+    padding: .5rem 2rem;
+    width: 50%;
+    height: 3rem;
+    background-color: #4CAF50;
+}
+.hobbies p {
+    line-height: 1.3;
+}
 .expertise {
-    padding: 2rem;
+    margin-left: 2rem;
 }
-.expertise .heading {
-    padding-left: .7rem;
+
+.hobbies,
+.expertise {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
-.expertise small {
-    display: inline-block;
-    width: 20%;
-    margin-bottom: .5rem;
+.hobbies h2,
+.expertise h2 {
+    padding-bottom: 1rem;
+    font-weight: 200;
 }
+
 /* ==== contact page === */
 .wrapper-contact {
-    margin-top: 10vh; 
+    background-color: #f4fcff;
+}
+.wrapper-contact .row {
+    width: 100rem;
+    margin: 10rem auto;
 }
 /* ==== message box page === */
+.helpinfo {
+    padding: 4rem;
+}
+.contact-section {
+    padding: 2rem 0;
+}
+.helpinfo h1 {
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+.helpinfo h2 {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.helpinfo p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+.connect {
+    margin-bottom: 2.5rem;
+}
+/* input styling for box display */
 
-.side {
-    margin-left: 5%;
-    width: 40%;
-    height: 55vh;
-}
-.side img {
+input[type=text],
+textarea{
     width: 100%;
-    height: 55vh;
+    padding: 1.2rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }
-.contact-form {
-    width: 40%;
-    margin-right: 10%;
-    padding: 3rem 1rem 0;
-}
-.contact-form h2 {
-    font-weight: 700;
-    padding: 0;
-    text-align: center;
-}
-.input-container {
-    width: 100%;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-}
-.formicon {
-    color: dodgerblue;
-    display: block;
-}
-input::placeholder{
+input::placeholder,
+textarea::placeholder {
     opacity: .7;
 }
-input[type=text],
-input[type=text] {
-    width: 100%;
-    padding: 1rem 0;
-    margin-bottom: .5rem;
-    outline: none;
-    border: 0;
-    border-bottom: 1px solid dodgerblue;
-    resize: vertical;   
+textarea {
+    height: 11rem;
+    font-size: 2rem;
 }
 
-.btn {
-    margin-top: 1rem;
-    color: dodgerblue;
-    padding: 1.5rem;
-    border: 1px solid dodgerblue;
-    background: transparent;
-    cursor: pointer;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 700;
+/* Style the label to display next to the inputs */
+label {
+padding: 1.2rem;
+padding-left: 0;
+display: block;
 }
-.btn:hover {
-    opacity: .8;
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #4CAF50;
     color: white;
-    background: dodgerblue;
+    padding: 1.2rem 4rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* ===== footer page ===== */
-.footer {
-    margin-top: 12vh;
-    background-color: dodgerblue;
-    height: 20rem;
-    color: #efefef;
-}
 .footer-content {
-    padding-top: 5rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
-.footer-content p {
-    padding-left: 1.5rem;
-}
-.fa-phone {
-    padding-right: 1rem;
-    color: #efefef;
-}
 .social {
-    padding: 2rem;
+    padding: 2rem 0;
     font-size: 3rem;
-    width: fit-content;
-    text-decoration: none;
-    border-radius: 50%;
-    color: #efefef;
-  }
+    color: #333;
+}
 
+/* media queries for screen sizes */
 
-
-/*
-==== media queries ===== 
-  @media screen and (max-width: 600px) {
-
-    .column, .content {
-      width: 100%;
-      display: block;
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 600px;
+        overflow: hidden;
     }
-    
-    .side {
-        max-width: 56rem; 
-        margin: 0;
+    .row {
+        width: 100%;
     }
-    .wrapper {
-        max-width: 56rem; 
-        margin-left: 2.5rem;
+    .header .col-md {
+        width: 50%;
+    }
+    .topnav {
+        display: none;
+    }
+    .myicon {
+        padding: 0;
+        width: 50%;
+        margin-top: 5rem;
+        margin-left: 10rem;
     }
     .content {
-        margin-top: -5rem;
-        margin-left: 13rem;
+      width: 80%;   
     }
-    input[type=text], input[type=submit] {
-        width: 45%;
-        display: block;
+    .content h1{
+        padding-left: 2rem;
+        font-size: 5rem;
+        text-align: center;     
     }
-
-    .img-rounded {
-        width: 30%;
+    .content p {
+        padding-left: 2rem;  
+        text-align: center;   
+        font-size: 1.3rem; 
     }
-    .wrapper-body {
-        margin-top: 3vh;
+    .biodata span,
+    .biodata small {
+        font-size: 1.35rem;
+        padding-bottom: 0;
     }
-    h2, h1 {
-        font-size: 1.8rem;
+    .aboutinfo h1,
+    .biodata h1 {
+        font-size: 2.5rem;
     }
-    .track {
-        font-size: 1rem;
+    .myProgress {
+        font-size: 1.3rem;
+    }
+    .aboutinfo p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .hobbies p {
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+    .wrapper-body .col-md {
+        width: 50%;
+    }
+    .biodata {
+        margin-left: 1.5rem;
+    }
+    .wrapper-contact .col-md,
+    .wrapper-body .col-md {
+        width: 100%;
+    }
+    .wrapper-body .aboutinfo,
+    .wrapper-body .biodata {
+        padding-left: 2rem;
+    }
+    .wrapper-contact .row {
+        margin: 3rem 0;
+    }
+    .helpinfo {
+        width: 50%;
+        margin-left: 0;
+    }
+    .helpinfo:first-child p {
+        font-size: 1.5rem;
+    }
+    .connect {
+        margin-bottom: 0;
+    }
+    .contact-section {
+        width: 40%;
+        margin-left: 2.5rem;
+    }
+    input[type=submit] {
+        margin-left: 2.5rem;   
     }
     .footer {
-        width: 100%;
-        margin: 8rem auto 0;
-        height: 13rem;
-    }
-    .footer-content {
-        padding-top: 2rem;
+        font-size: 1.2rem;
     }
 
-  }
-
- */
-
+}
 
 
 
