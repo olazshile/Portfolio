@@ -577,8 +577,7 @@ input[type=submit] {
         color: #fff;
     }
     .topnav a:hover, .topnav a:active {
-        border: 1px solid #fff;
-        padding: 2.5rem;
+        color: #eee;
     }
     .myicon {
         padding: 0;
